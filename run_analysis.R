@@ -1,12 +1,8 @@
 library(plyr) 
 
-
 # Step 1 
 
-
 # Merge the training and test sets to create one data set 
-
- 
 #-------------------------------------------------------------
 
 #Reads X training data text file in table format and creates a data frame
@@ -57,10 +53,7 @@ subject_data <- rbind(subject_train, subject_test)
 
 # Step 2 
 
-
 # Extract only values on the mean and standard deviation for each measurement 
-
-
 #-------------------------------------------------------------------------------------- 
 
 # Read features data text file in table format and creates a data frame
@@ -85,10 +78,7 @@ names(x_data) <- features[mean_and_std_features, 2]
 
 # Step 3 
 
-
 # Use descriptive activity names to name the activities in the data set 
-
-
 #---------------------------------------------------------------------- 
 
 # Reads activities lables text file in table format and creates a data frame
@@ -103,41 +93,29 @@ y_data[, 1] <- activities[y_data[, 1], 2]
  
 # correct column name 
 
-
 names(y_data) <- "activity" 
 
 
 # Step 4 
 
-
 # Appropriately label the data set with descriptive variable names 
-
-
 #-------------------------------------------------------------------
-
 
 # correct column name 
 
-
 names(subject_data) <- "subject" 
 
-
 # bind all the data in a single data set 
-
 
 all_data <- cbind(x_data, y_data, subject_data) 
 
 
 # Step 5 
 
-
 # Create a second, independent tidy data set with the average of each variable 
 
 # for each activity and each subject 
-
- 
 #-------------------------------------------------------------------------- 
-
 
 # Avearge values of each of 66 columns of activity & subject after excluding last two columns
 
