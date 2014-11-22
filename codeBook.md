@@ -3,12 +3,12 @@ R programm run_analysis.R performs following 5 steps as described in the project
   2.Extracts only the measurements on the mean and standard deviation for each measurement. 
   3.Uses descriptive activity names to name the activities in the data set
   4.Appropriately labels the data set with descriptive variable names. 
-  5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for        each activity and each subject.
+  5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 Decription of Variables used in the R programm:
   x_test -> x testing data read from X_text.txt file
   y_test -> y testing data read from y_test.txt file
-  subject_test -> subject used to generate testing data read from subject_test.txt file
+  subject_test -> subject used to generate testing data read from   subject_test.txt file
   
   x_train -> x training data read from X_train.txt file
   y_train -> y training data read from y_train.txt file
