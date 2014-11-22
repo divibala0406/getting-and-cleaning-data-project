@@ -6,21 +6,21 @@ R programm run_analysis.R performs following 5 steps as described in the project
   5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 Decription of Variables used in the R programm:
-  x_test -> x testing data read from X_text.txt file
-  y_test -> y testing data read from y_test.txt file
-  subject_test -> subject used to generate testing data read from   subject_test.txt file
+  x_test -> x testing data read from X_text.txt file;
+  y_test -> y testing data read from y_test.txt file;
+  subject_test -> subject used to generate testing data read from   subject_test.txt file;
   
-  x_train -> x training data read from X_train.txt file
-  y_train -> y training data read from y_train.txt file
-  subject_train -> subject used to generate training data read from subject_train.txt file
+  x_train -> x training data read from X_train.txt file;
+  y_train -> y training data read from y_train.txt file;
+  subject_train -> subject used to generate training data read from subject_train.txt file;
   
 Transformation used to clean up data:
-  Merge both testing and training for each X, y & subject datasets individually
-  Get only columns with names containing mean() or std() and subsetting the desired columns and store it x_data
+  Merge both testing and training for each X, y & subject datasets individually;
+  Get only columns with names containing mean() or std() and subsetting the desired columns and store it x_data;
   correct and tidy the column names by removing hyphens, brackets and abbreviating long words like 
-  "magnitude" and "acceleration" to  "mag" and "acc" respectively. Tidy up last 6 column names that have bodybody"      string to "body"
-  Use descriptive activity names to name the activities in the data set by reading from activities_labels.txt
-  Update values with correct activity names
+  "magnitude" and "acceleration" to  "mag" and "acc" respectively. Tidy up last 6 column names that have bodybody"      string to "body";
+  Use descriptive activity names to name the activities in the data set by reading from activities_labels.txt;
+  Update values with correct activity names;
 
   
 Data Set information:
