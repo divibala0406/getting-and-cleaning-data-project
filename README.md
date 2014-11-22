@@ -34,7 +34,12 @@ Get only columns with mean() or std() in their names
 
 Subset the desired columns 
 
-Correct the column names 
+correct and tidy the column names by removing hyphens, brackets
+and abbreviating long words like "magnitude", "acceleration" to 
+"mag" and "acc" respectively. Tidy up last 6 column names that 
+have "bodybody" string to "body"
+
+
 
 
 Step 3 :Use descriptive activity names to name the activities in the data set 
@@ -43,7 +48,7 @@ Reads activities lables text file in table format and creates a data frame
 
 Update values with correct activity names 
 
-Correct column name 
+Correct column name
  
 
 Step 4 :Appropriately label the data set with descriptive variable names 
